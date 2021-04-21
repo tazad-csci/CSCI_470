@@ -6,7 +6,7 @@ Programmer: Tamjid Azad
 Date Due: 4/9/21
 
 Purpose: Created TileGridPanel which is the yellow area in the
-		 middle we listen for mouse events to draw the grid.
+         middle we listen for mouse events to draw the grid.
 ***************************************************************/
 package package1;
 
