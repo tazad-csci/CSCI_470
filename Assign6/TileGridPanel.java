@@ -1,12 +1,12 @@
 /***************************************************************
-CSCI 470         Program 4     Spring 2021
+CSCI 470         Program 6     Spring 2021
 
 Programmer: Tamjid Azad
 
 Date Due: 4/23/21
 
 Purpose: Created TileGridPanel which is the yellow area in the
-		     middle we listen for mouse events to draw the grid.
+	 middle we listen for mouse events to draw the grid.
 ***************************************************************/
 package package1;
 
