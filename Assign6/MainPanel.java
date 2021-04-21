@@ -1,12 +1,12 @@
 /***************************************************************
-CSCI 470         Program 4     Spring 2021
+CSCI 470         Program 6     Spring 2021
 
 Programmer: Tamjid Azad
 
 Date Due: 4/23/21
 
 Purpose: Created MainPanel which is the entire panel of the grid
-		     mouse event thread.
+	 mouse event thread.
 ***************************************************************/
 package package1;
 
@@ -16,24 +16,24 @@ import javax.swing.*;
 
 public class MainPanel extends JPanel implements ActionListener
 {
-  String[] imageStringNameA ={"images/pat1.gif","images/pat2.gif","images/pat3.gif","images/pat4.gif","images/pat5.gif"};	
+    String[] imageStringNameA ={"images/pat1.gif","images/pat2.gif","images/pat3.gif","images/pat4.gif","images/pat5.gif"};	
 	
-	final static Image[] imageA = new Image[5];//image arr holds 5 possible images of gifs we load using toolkit code only one copy needed
-	Toolkit TKI = Toolkit.getDefaultToolkit();
+    final static Image[] imageA = new Image[5];//image arr holds 5 possible images of gifs we load using toolkit code only one copy needed
+    Toolkit TKI = Toolkit.getDefaultToolkit();
 	
-	JToolBar MainPanelToolBar = new JToolBar(); //pointer to top toolbar for main panel	
-	private final JButton resetB = new JButton("Reset");
+    JToolBar MainPanelToolBar = new JToolBar(); //pointer to top toolbar for main panel	
+    private final JButton resetB = new JButton("Reset");
+	 
+    TileGridPanel tileGridPanelPtr=new TileGridPanel(); //pointer to a panel yellow area where we will “paint” items on a tile Grid
 	
-	TileGridPanel tileGridPanelPtr=new TileGridPanel(); //pointer to a panel yellow area where we will “paint” items on a tile Grid
-	
-	JButton patch1btn; //need to declare 5 buttons for tool bar….and a reset button
-	JButton patch2btn;
-	JButton patch3btn;
-	JButton patch4btn;
-	JButton patch5btn;
+    JButton patch1btn; //need to declare 5 buttons for tool bar….and a reset button
+    JButton patch2btn;
+    JButton patch3btn;
+    JButton patch4btn;
+    JButton patch5btn;
 
-	public MainPanel()
-	{
+    public MainPanel()
+     {
 	  //code the toolkit code that I have shown earlier that loads the images into the one dimensional imagaA
 	 
 	 this.setLayout(new BorderLayout()); //we will add items to north, center south on main panel
@@ -57,8 +57,8 @@ public class MainPanel extends JPanel implements ActionListener
 	}
 	 
 	 
-  //prepare north orange area of main panel with toolbar and patch buttons 
-   patch1btn = new JButton(new ImageIcon(imageA[0]));  //this how you get a button with an image 
+     //prepare north orange area of main panel with toolbar and patch buttons 
+  	 patch1btn = new JButton(new ImageIcon(imageA[0]));  //this how you get a button with an image 
 	 patch2btn = new JButton(new ImageIcon(imageA[1]));  //this how you get a button with an image
 	 patch3btn = new JButton(new ImageIcon(imageA[2]));  //this how you get a button with an image
 	 patch4btn = new JButton(new ImageIcon(imageA[3]));  //this how you get a button with an image
@@ -77,12 +77,8 @@ public class MainPanel extends JPanel implements ActionListener
 	 patch5btn.addActionListener(this);
 	 resetB.addActionListener(this);
 	
-	 Top.add(MainPanelToolBar);
-	//this.add(MainPanelToolBar,BorderLayout.NORTH);
-
-	
-	 //tileGridPanelPtr.ResetGridTile(); //reset grid and and paint empty center area		
-	}//end constructor
+	 Top.add(MainPanelToolBar);		
+	}  //end constructor
 
 	
 	/***************************************************************
