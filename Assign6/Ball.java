@@ -6,7 +6,7 @@ Programmer: Tamjid Azad
 Date Due: 4/23/21
 
 Purpose: Created Ball to represent a single bouncing ball in the
-		 animation.
+	 animation.
 ***************************************************************/
 package package1;
 
