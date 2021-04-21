@@ -45,10 +45,10 @@ class Date
 
    Notes: nothing
   ****************************************************************/ 
- public int getMonth() 
-	{
-	  return month;
-	}
+   public int getMonth() 
+   {
+	return month;
+   }
 
 
         /****************************************************************
@@ -60,10 +60,10 @@ class Date
 
         Notes: nothing
         ****************************************************************/ 
-  public int getDay()
-	{
-	  return day;
-	}
+   public int getDay()
+   {
+	return day;
+   }
 
 
 
@@ -76,10 +76,10 @@ class Date
 
         Notes: nothing
         ****************************************************************/ 
- public int getYear()
-	{
+  public int getYear()
+   {
 	  return year;
-	}
+   }
 
 
 
