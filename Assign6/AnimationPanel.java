@@ -1,12 +1,12 @@
 /***************************************************************
-CSCI 470         Program 4     Spring 2021
+CSCI 470         Program 6     Spring 2021
 
 Programmer: Tamjid Azad
 
 Date Due: 4/23/21
 
 Purpose: Created AnimationPanel to display the animation in a
-		     separate background thread.
+         separate background thread.
 ***************************************************************/
 package package1;
 
@@ -21,6 +21,15 @@ class AnimationPanel extends JPanel implements Runnable {
 	Dimension ballPanelDimPtr = null;
 	Thread threadObjPtr = null;
 	
+	/***************************************************************
+	Function: void startBalls() 
+
+	Use: If the thread reference if null, create a new thread object.
+
+	Arguments: None
+
+	Returns: Nothing
+	***************************************************************/
 	public void startBalls() {
 
 	    if (threadObjPtr == null) {
@@ -30,11 +39,32 @@ class AnimationPanel extends JPanel implements Runnable {
 	}
 
 
+	/***************************************************************
+	Function: void stopBalls()
+	
+	Use: Set the thread reference to null which will cause the loop in
+		 run() method to exit.
+
+	Arguments: None
+
+	Returns: Nothing
+	***************************************************************/
 	public void stopBalls() {
 		// TODO Auto-generated method stub
 		threadObjPtr = null;
 	}
 	
+	
+	/***************************************************************
+	Function: void run()
+	
+	Use: This will run in a separate background thread. it will have
+		 a loop that continues while the current thread is not null.
+
+	Arguments: None
+
+	Returns: Nothing
+	***************************************************************/
 	public void run() {
 		
 		while (threadObjPtr != null)
@@ -48,7 +78,18 @@ class AnimationPanel extends JPanel implements Runnable {
 		}
 	}
 	
+	
+	
+	/***************************************************************
+	Function: void paintComponent(Graphics g)
 
+	Use: This method should be overridden to set the arraylist of balls
+		 and call the draw method for each ball object.
+
+	Arguments: Graphics g used to call base constructor
+
+	Returns: Nothing
+	***************************************************************/
 	@Override
 	protected void paintComponent(Graphics g)	//paints the center panel with elements in 2darray
 	{ 
