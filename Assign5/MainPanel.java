@@ -1,5 +1,5 @@
 /***************************************************************
-CSCI 470         Program 6     Spring 2021
+CSCI 470         Program 5     Spring 2021
 
 Programmer: Tamjid Azad
 
