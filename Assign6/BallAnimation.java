@@ -1,12 +1,12 @@
 /***************************************************************
-CSCI 470         Program 4     Spring 2021
+CSCI 470         Program 6     Spring 2021
 
 Programmer: Tamjid Azad
 
 Date Due: 4/23/21
 
 Purpose: Created BallAnimation to which is an object in the east
-		     region of the application.
+	 region of the application.
 ***************************************************************/
 package package1;
 
@@ -21,7 +21,15 @@ public class BallAnimation extends JPanel implements ActionListener {
 	
 	AnimationPanel animationPanelPtr = new AnimationPanel();
 	
-	
+	/***************************************************************
+	 Function:  BallAnimation()
+
+	 Use: BallAnimation Constructor
+
+	 Arguments: None
+
+	 Returns: Nothing
+    ***************************************************************/
 	public BallAnimation() {
 		stopB.setEnabled(false);
 		
