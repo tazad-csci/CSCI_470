@@ -28,7 +28,7 @@ class TileGridPanel extends JPanel implements MouseListener
 	//constructor
 	 public TileGridPanel()
 	  {  
-		 this.addMouseListener(this);  //tells this panel we have routines for mousevents interface
+	     this.addMouseListener(this);  //tells this panel we have routines for mousevents interface
 	     this.setBackground(Color.yellow);
 	  }
 	 
